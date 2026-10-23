@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101a33">
+
+  <title>Aventura 2D</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-icon">★</span>
+        <div>
+          <p class="eyebrow">PIXEL ADVENTURE</p>
+          <h1>Aventura 2D</h1>
+        </div>
+      </div>
+
+      <div class="level-tag">FASE 01</div>
+    </header>
+
+    <section class="hud" aria-label="Placar">
+      <div class="hud-item">
+        <span class="hud-label">MOEDAS</span>
+        <strong id="coin-count">0</strong>
+      </div>
+
+      <div class="hud-item">
+        <span class="hud-label">STATUS</span>
+        <strong id="game-status">JOGANDO</strong>
+      </div>
+
+      <div class="hud-item">
+        <span class="hud-label">OBJETIVO</span>
+        <strong>Encontre a bandeira!</strong>
+      </div>
+    </section>
+
+    <section class="canvas-frame" aria-label="Área do jogo">
+      <canvas
+        id="game-canvas"
+        width="960"
+        height="540"
+        aria-label="Jogo de plataforma 2D"
+      >
+        Seu navegador não oferece suporte ao Canvas HTML5.
+      </canvas>
+    </section>
+
+    <section class="controls">
+      <div class="control-group">
+        <span class="control-title">MOVIMENTO</span>
+        <p>
+          <kbd>←</kbd> <kbd>→</kbd>
+          ou <kbd>A</kbd> <kbd>D</kbd>
+        </p>
+      </div>
+
+      <div class="control-group">
+        <span class="control-title">PULAR</span>
+        <p><kbd>Espaço</kbd> ou <kbd>W</kbd> <kbd>↑</kbd></p>
+      </div>
+
+      <div class="control-group">
+        <span class="control-title">REINICIAR</span>
+        <p><kbd>R</kbd></p>
+      </div>
+    </section>
+
+    <p class="tip">
+      Dica: solte o botão de pulo antes para fazer um salto mais curto.
+      Desvie do inimigo e não caia nos abismos!
+    </p>
+
+    <footer>
+      Projeto educacional · Node.js + Express + HTML5 Canvas
+    </footer>
+  </main>
+</body>
+</html>
+
